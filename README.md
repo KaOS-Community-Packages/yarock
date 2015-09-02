@@ -7,7 +7,8 @@ URL: https://launchpad.net/yarock
 
 Install:
 
-kcp -i [htmlcxx](../../../htmlcxx)
-kcp -i yarock
+1) kcp -i [htmlcxx](../../../htmlcxx)
+
+2) kcp -i yarock
 
 
