@@ -1,15 +1,13 @@
-yarock
+Yarock
 ======
 
-Yarock is Qt Modern Music Player with collection browser based on cover art
+Yarock is a modern, Qt5 music player with a cover art based collection browser.
 
 URL: https://launchpad.net/yarock
 
-KCP Dependencies:
-[htmlcxx](../../../htmlcxx)
-
 Install:
 
+kcp -i [htmlcxx](../../../htmlcxx)
 kcp -i yarock
 
 
