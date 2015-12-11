@@ -8,13 +8,16 @@ license=('GPL3')
 makedepends=('cmake' 'mpv')
 depends=('htmlcxx' 'qt5-x11extras' 'phonon-qt5' 'taglib')
 optdepends=('mpv: alternative (working) engine')
-source=("https://launchpad.net/yarock/1.x/${pkgver}/+download/Yarock_${pkgver}_source.tar.gz"
-md5sums=('794020bf0a571a24df6a6505d530f7c2')
+source=("https://launchpad.net/yarock/1.x/${pkgver}/+download/Yarock_${pkgver}_source.tar.gz" "taglib-1.10.patch")
+md5sums=('794020bf0a571a24df6a6505d530f7c2' 'SKIP')
 
 prepare() {
   rm -rf "build"
   mkdir "build"
 
+  # patch to fix upgrade tabglib 1.10 
+   patch -p0 -i taglib-1.10.patch
+   
   # phonon include patch
   # patch -p0 -i "phonon.patch"
   # patch to fix build with recent qt5
